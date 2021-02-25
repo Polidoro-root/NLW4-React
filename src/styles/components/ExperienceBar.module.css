@@ -1,0 +1,31 @@
+.experienceBar {
+  display: flex;
+  align-items: center;
+}
+
+.experienceBar span {
+  font-size: 1rem;
+}
+
+/* '> div' means that tag will be effective in the first level child only */
+.experienceBar > div {
+  flex: 1;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--gray-line);
+  margin: 0 1.5rem;
+  position: relative;
+}
+
+/* '> div > div' means that tag will be effective in the first level child of first level child only */
+.experienceBar > div > div {
+  height: 4px;
+  border-radius: 4px;
+  background: var(--green);
+} 
+
+.experienceBar > div .currentExperience {
+  position: absolute;
+  top: 12px;
+  transform: translateX(-50%);
+}
